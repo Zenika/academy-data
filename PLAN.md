@@ -2,7 +2,7 @@ Domaine: [DevOps]
 
 Sous-domaine: Git
 
-# Formation Git
+# Formation Data
 
 ## Savoir mettre en place et configurer Git
 

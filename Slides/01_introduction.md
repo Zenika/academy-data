@@ -9,13 +9,27 @@
 <!-- .slide: class="toc" -->
 
 - **[Introduction](#/1)**
-- [Fonctionnement de Git](#/2)
-- [Utiliser Git en local](#/3)
-- [Les références](#/4)
-- [Utiliser Git en distant](#/5)
-- [Configuration et outils externes](#/6)
+- [Système distribué](#/2)
+- [Cluster et distributions d’Hadoop](#/3)
+- [Calcul distribué : Spark en action](#/4)
+- [Tour des outils du monde de la data](#/5)
+- [RGPD](#/6)
 
-Notes :
+
+
+## Sous-Plan
+
+- Qu'est-ce que le Big Data ? 
+- Cas d'usage du Big Data
+- La data science
+- Les métiers du Big Data
+- Dataviz
+
+
+
+# Qu'est-ce que le Big Data ?
+
+<!-- .slide: class="page-title" -->
 
 
 

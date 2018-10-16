@@ -9,15 +9,11 @@
 <!-- .slide: class="toc" -->
 
 - **[Introduction](#/1)**
-- [Fonctionnement de Git](#/2)
-- [Utiliser Git en local](#/3)
-- [Les références](#/4)
-- [Utiliser Git en distant](#/5)
-- [Configuration et outils externes](#/6)
-- **[Mettre en place des organisations de travail](#/7)**
-- [Administration des entrepôts](#/8)
-- [Les sous modules](#/9)
-- [Projets OpenSource & Pull Requests](#/10)
+- [Système distribué](#/2)
+- [Cluster et distributions d’Hadoop](#/3)
+- [Calcul distribué : Spark en action](#/4)
+- [Tour des outils du monde de la data](#/5)
+- [RGPD](#/6)
 
 Notes :
 

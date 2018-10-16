@@ -1,4 +1,4 @@
-# Fonctionnement de Git
+# Introduction
 
 <!-- .slide: class="page-title" -->
 

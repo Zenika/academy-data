@@ -1,4 +1,4 @@
-# Formation Git
+# Formation Data
 
 <!-- .slide: class="page-title" -->
 
@@ -16,7 +16,7 @@
 - [Système distribué](#/2)
 - [Cluster et distributions d’Hadoop](#/3)
 - [Calcul distribué : Spark en action](#/4)
-- [Tour des outils du monde de la data ](#/5)
+- [Tour des outils du monde de la data](#/5)
 - [RGPD](#/6)
 
 
