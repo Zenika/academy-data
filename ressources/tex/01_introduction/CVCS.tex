@@ -1,0 +1,15 @@
+\documentclass{standalone}
+
+\usepackage{gitdags}
+
+\begin{document}
+\scalebox{1}{
+\begin{tikzpicture}
+  \node[label={below:Charlie}] (Charlie) {\includegraphics{graphs-icons/user2.png}};
+  \node[right= of Charlie, label={below:Serveur central}] (server) {\includegraphics{graphs-icons/server.png}};
+  \node[right= of server, label={below:Alice}] (Alice) {\includegraphics{graphs-icons/user3.png}};
+  \draw[->, ultra thick] (Charlie) -- (server);
+  \draw[->, ultra thick] (Alice) -- (server);
+\end{tikzpicture}
+}
+\end{document}

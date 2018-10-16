@@ -1,0 +1,24 @@
+figure.inline img {
+  display: inline;
+}
+
+.tight li, pre.tight {
+  margin: 0;
+}
+
+pre.tight code {
+  font-size: 1.25em;
+}
+
+.reveal section.page-tp3_1-3::after {
+  content: "TP3.1 ⇒ TP3.3";
+}
+.reveal section.page-tp3_4-5::after {
+  content: "TP3.4 ⇒ TP3.5";
+}
+.reveal section.page-tp3_6::after {
+  content: "TP3.6";
+}
+.reveal section.page-tp3_7::after {
+  content: "TP3.7";
+}

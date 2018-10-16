@@ -1,0 +1,21 @@
+\documentclass{standalone}
+
+\usepackage{gitdags}
+
+\begin{document}
+\scalebox{2}{
+\begin{tikzpicture}
+  \gitDAG[grow right sep=2em]{
+    C1 -- {
+      C2 -- C3,
+      C4
+    } -- C5
+  };
+  \node[highlighted commit] at (C5) {\phantom{C5}};
+  \gitbranch [oldmaster] {master} {reset preaction, below= of C3, opacity= .5} {C3};
+  \gitbranch {secondBranch} {below= of C4} {C4};
+  \gitbranch {master} {below= of C5} {C5};
+  \gitHEAD {below= of master} {master};
+\end{tikzpicture}
+}
+\end{document}

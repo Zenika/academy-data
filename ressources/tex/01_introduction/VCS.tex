@@ -1,0 +1,15 @@
+\documentclass{standalone}
+
+\usepackage{gitdags}
+
+\begin{document}
+\scalebox{1}{
+\begin{tikzpicture}
+  \node[label={below:Charlie}] (Charlie) {\includegraphics{graphs-icons/user2.png}};
+  \node[right= of Charlie] (question) {\includegraphics{graphs-icons/symbol_questionmark.png}};
+  \node[right= of question, label={below:Alice}] (Alice) {\includegraphics{graphs-icons/user3.png}};
+  \draw[->, ultra thick] (question) -- (Charlie);
+  \draw[->, ultra thick] (question) -- (Alice);
+\end{tikzpicture}
+}
+\end{document}

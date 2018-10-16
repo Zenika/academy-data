@@ -1,0 +1,20 @@
+\documentclass{standalone}
+
+\usepackage{gitdags}
+
+\begin{document}
+\scalebox{1}{
+\begin{tikzpicture}
+  \node[label={below:Charlie}] (Charlie) {\includegraphics{graphs-icons/user2.png}};
+  \node[below right= -3.5em of Charlie] (Charlie_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \node[above right= of Charlie] (fetch) {Fetch changes};
+  \node[below right= of Charlie] (push) {Push changes};
+  \node[below right= of fetch, label={below:Serveur}] (server) {\includegraphics{graphs-icons/server.png}};
+  \node[below right= -3.5em of server] (Serveur_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \draw[<-, color=green, ultra thick] (Charlie) -- (fetch);
+  \draw[<-, color=green, ultra thick] (fetch) -- (server);
+  \draw[->, color=red, ultra thick] (Charlie) -- (push);
+  \draw[->, color=red, ultra thick] (push) -- (server);
+\end{tikzpicture}
+}
+\end{document}

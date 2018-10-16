@@ -1,0 +1,22 @@
+\documentclass{standalone}
+
+\usepackage{gitdags}
+
+\begin{document}
+\scalebox{2}{
+\begin{tikzpicture}
+  \gitDAG[grow right sep=2em]{
+    C1 -- {
+      C2 -- C3 -- C5,
+      C4 -- C3'
+    },
+    C4 -- C5
+  };
+  \gitbranch [oldSecondBranch] {secondBranch} {reset preaction, below= of C4.south west, opacity= .5} {C4};
+  \node[highlighted commit] at (C3') {\phantom{C3'}};
+  \gitbranch {secondBranch} {below= of C3'.south east} {C3'};
+  \gitbranch {master} {below= of C5} {C5};
+  \gitHEAD {below= of secondBranch} {secondBranch};
+\end{tikzpicture}
+}
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass{standalone}
+
+\usepackage{gitdags}
+
+\begin{document}
+\scalebox{2}{
+\begin{tikzpicture}
+  \gitDAG[grow right sep=2em]{
+    A -- {[nodes={yshift=6.01em}]
+      B,
+      C -- F,
+      {[nodes={xshift=4.4em}] G -- I -- K},
+      D -- H -- J,
+      E
+    },
+    B -- F,
+    F -- I,
+    E -- H,
+    H -- I,
+    J -- K
+  };
+\end{tikzpicture}
+}
+\end{document}

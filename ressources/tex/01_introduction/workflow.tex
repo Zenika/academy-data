@@ -1,0 +1,39 @@
+\documentclass{standalone}
+
+\usepackage{gitdags}
+
+\begin{document}
+\scalebox{1}{
+\begin{tikzpicture}
+  \node[label={below:Fransworth}] (Fransworth) {\includegraphics{graphs-icons/teacher.png}};
+  \node[below right= -3.5em of Fransworth] (Charlie_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \node[right= of Fransworth, label={below:Qualif}] (qualif) {\includegraphics{graphs-icons/server.png}};
+  \node[below right= -3.5em of qualif] (qualif_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \node[below= of Fransworth, label={below:Dan}] (Dan) {\includegraphics{graphs-icons/dude5.png}};
+  \node[below right= -3.5em of Dan] (Dan_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \node[right= of Dan, label={below:Integration}] (integ) {\includegraphics{graphs-icons/server.png}};
+  \node[below right= -3.5em of integ] (integ_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \node[right= of integ, label={below:Eve}] (Eve) {\includegraphics{graphs-icons/businesswoman.png}};
+  \node[below right= -3.5em of Eve] (Eve_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \node[below left = of Dan] (Dan_team) {Autre equipe};
+  \node[below= of integ, label={below:Developpement}] (dev) {\includegraphics{graphs-icons/server.png}};
+  \node[below right= -3.5em of dev] (dev_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \node[right= of dev, label={below:Bob}] (Bob) {\includegraphics{graphs-icons/user.png}};
+  \node[below right= -3.5em of Bob] (Bob_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \node[below right= of dev, label={below:Charlie}] (Charlie) {\includegraphics{graphs-icons/user2.png}};
+  \node[below right= -3.5em of Charlie] (Charlie_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \node[below left= of dev, label={below:Alice}] (Alice) {\includegraphics{graphs-icons/user3.png}};
+  \node[below left= -3.5em of Alice] (Alice_repo) {\includegraphics[height=2em]{graphs-icons/data_replace.png}};
+  \draw[<->, ultra thick] (Fransworth) -- (qualif);
+  \draw[<-, ultra thick] (Fransworth) -- (integ);
+  \draw[<->, ultra thick] (Dan) -- (integ);
+  \draw[<->, ultra thick] (Eve) -- (integ);
+  \draw[<->, ultra thick] (Dan) -- (Dan_team);
+  \draw[<->, ultra thick] (Eve) -- (dev);
+  \draw[<->, ultra thick] (Bob) -- (dev);
+  \draw[<->, ultra thick] (Charlie) -- (dev);
+  \draw[<->, ultra thick] (Alice) -- (dev);
+  \draw[<->, ultra thick] (Charlie) -- (Alice);
+\end{tikzpicture}
+}
+\end{document}
