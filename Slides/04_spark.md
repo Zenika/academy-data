@@ -1,4 +1,4 @@
-# Introduction
+# Calcul distribué : Spark en action
 
 <!-- .slide: class="page-title" -->
 
@@ -8,94 +8,72 @@
 
 <!-- .slide: class="toc" -->
 
-- **[Introduction](#/1)**
+- [Introduction](#/1)
 - [Système distribué](#/2)
 - [Cluster et distributions d’Hadoop](#/3)
-- [Calcul distribué : Spark en action](#/4)
+- **[Calcul distribué : Spark en action](#/4)**
 - [Tour des outils du monde de la data](#/5)
 - [RGPD](#/6)
 
 
 
-## Introduction
+## Calcul distribué : Spark en action
 
-- **Qu'est-ce que le Big Data ?**
-- Cas d'usage du Big Data
-- La data science
-- Dataviz
-- Les métiers du Big Data
-
-
-
-# Qu'est-ce que le Big Data ?
-
-<!-- .slide: class="page-title" -->
+- **Qu'est-ce que Spark ?**
+- Lire un fichier avec Spark
+- Effectuer des transformations
+- Ecrire un fichier depuis Spark dans HDFS
 
 
 
-## Introduction
-
-- Qu'est-ce que le Big Data ?
-- **Cas d'usage du Big Data**
-- La data science
-- Dataviz
-- Les métiers du Big Data
-
-
-
-# Cas d'usage du Big Data
+# Qu'est-ce que Spark ?
 
 <!-- .slide: class="page-title" -->
 
 
 
-## Introduction
+## Calcul distribué : Spark en action
 
-- Qu'est-ce que le Big Data ?
-- Cas d'usage du Big Data
-- **La data science**
-- Dataviz
-- Les métiers du Big Data
-
+- Qu'est-ce que Spark ?
+- **Lire un fichier avec Spark**
+- Effectuer des transformations
+- Ecrire un fichier depuis Spark dans HDFS
 
 
-# La data science
 
+# Lire un fichier avec Spark
 
 <!-- .slide: class="page-title" -->
 
 
 
-## Introduction
+## Calcul distribué : Spark en action
 
-- Qu'est-ce que le Big Data ?
-- Cas d'usage du Big Data
-- La data science
-- **Dataviz**
-- Les métiers du Big Data
-
-
-
-# Dataviz
-
-<!-- .slide: class="page-title" -->
+- Qu'est-ce que Spark ?
+- Lire un fichier avec Spark
+- **Effectuer des transformations**
+- Ecrire un fichier depuis Spark dans HDFS
 
 
 
-## Introduction
-
-- Qu'est-ce que le Big Data ?
-- Cas d'usage du Big Data
-- La data science
-- Dataviz
-- **Les métiers du Big Data**
-
-
-
-# Les métiers du Big Data
+# Effectuer des transformations
 
 <!-- .slide: class="page-title" -->
 
+
+
+## Calcul distribué : Spark en action
+
+- Qu'est-ce que Spark ?
+- Lire un fichier avec Spark
+- Effectuer des transformations
+- **Ecrire un fichier depuis Spark dans HDFS**
+
+
+
+# Ecrire un fichier depuis Spark dans HDFS
+
+<!-- .slide: class="page-title" -->
 
 
 

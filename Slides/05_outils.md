@@ -1,4 +1,4 @@
-# Introduction
+# Tour des outils du monde de la data
 
 <!-- .slide: class="page-title" -->
 
@@ -8,94 +8,92 @@
 
 <!-- .slide: class="toc" -->
 
-- **[Introduction](#/1)**
+- [Introduction](#/1)
 - [Système distribué](#/2)
 - [Cluster et distributions d’Hadoop](#/3)
 - [Calcul distribué : Spark en action](#/4)
-- [Tour des outils du monde de la data](#/5)
+- **[Tour des outils du monde de la data](#/5)**
 - [RGPD](#/6)
 
 
 
-## Introduction
+## Tour des outils du monde de la data
 
-- **Qu'est-ce que le Big Data ?**
-- Cas d'usage du Big Data
-- La data science
-- Dataviz
-- Les métiers du Big Data
-
-
-
-# Qu'est-ce que le Big Data ?
-
-<!-- .slide: class="page-title" -->
+- **Hive**
+- Sqoop
+- Kafka, Flume
+- Pig
+- Airflow
 
 
 
-## Introduction
-
-- Qu'est-ce que le Big Data ?
-- **Cas d'usage du Big Data**
-- La data science
-- Dataviz
-- Les métiers du Big Data
-
-
-
-# Cas d'usage du Big Data
+# Hive
 
 <!-- .slide: class="page-title" -->
 
 
 
-## Introduction
+## Tour des outils du monde de la data
 
-- Qu'est-ce que le Big Data ?
-- Cas d'usage du Big Data
-- **La data science**
-- Dataviz
-- Les métiers du Big Data
-
-
-
-# La data science
-
-
-<!-- .slide: class="page-title" -->
+- Hive
+- **Sqoop**
+- Kafka, Flume
+- Pig
+- Airflow
 
 
 
-## Introduction
-
-- Qu'est-ce que le Big Data ?
-- Cas d'usage du Big Data
-- La data science
-- **Dataviz**
-- Les métiers du Big Data
-
-
-
-# Dataviz
+# Sqoop
 
 <!-- .slide: class="page-title" -->
 
 
 
-## Introduction
+## Tour des outils du monde de la data
 
-- Qu'est-ce que le Big Data ?
-- Cas d'usage du Big Data
-- La data science
-- Dataviz
-- **Les métiers du Big Data**
+- Hive
+- Sqoop
+- **Kafka, Flume**
+- Pig
+- Airflow
 
 
 
-# Les métiers du Big Data
+# Kafka, Flume
 
 <!-- .slide: class="page-title" -->
 
+
+
+## Tour des outils du monde de la data
+
+- Hive
+- Sqoop
+- Kafka, Flume
+- **Pig**
+- Airflow
+
+
+
+# Pig
+
+<!-- .slide: class="page-title" -->
+
+
+
+## Tour des outils du monde de la data
+
+- Hive
+- Sqoop
+- Kafka, Flume
+- Pig
+- **Airflow**
+
+
+
+# Airflow
+
+<!-- .slide: class="page-title" -->
 
 
 

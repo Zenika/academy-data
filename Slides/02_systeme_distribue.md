@@ -1,4 +1,4 @@
-# Introduction
+# Système distibué
 
 <!-- .slide: class="page-title" -->
 
@@ -8,8 +8,8 @@
 
 <!-- .slide: class="toc" -->
 
-- **[Introduction](#/1)**
-- [Système distribué](#/2)
+- [Introduction](#/1)
+- **[Système distribué](#/2)**
 - [Cluster et distributions d’Hadoop](#/3)
 - [Calcul distribué : Spark en action](#/4)
 - [Tour des outils du monde de la data](#/5)
@@ -17,82 +17,44 @@
 
 
 
-## Introduction
+## Système distribué
 
-- **Qu'est-ce que le Big Data ?**
-- Cas d'usage du Big Data
-- La data science
-- Dataviz
-- Les métiers du Big Data
+- **Stockage distribué**
+- Calcul distribué
+- Négociateur de ressources
 
 
 
-# Qu'est-ce que le Big Data ?
+# Stockage distribué
 
 <!-- .slide: class="page-title" -->
 
 
 
-## Introduction
+## Système distribué
 
-- Qu'est-ce que le Big Data ?
-- **Cas d'usage du Big Data**
-- La data science
-- Dataviz
-- Les métiers du Big Data
+- Stockage distribué
+- **Calcul distribué**
+- Négociateur de ressources
 
 
 
-# Cas d'usage du Big Data
+# Calcul distribué
 
 <!-- .slide: class="page-title" -->
 
 
 
-## Introduction
+## Système distribué
 
-- Qu'est-ce que le Big Data ?
-- Cas d'usage du Big Data
-- **La data science**
-- Dataviz
-- Les métiers du Big Data
+- Stockage distribué
+- Calcul distribué
+- **Négociateur de ressources**
 
 
 
-# La data science
+# Négociateur de ressources
 
-
-<!-- .slide: class="page-title" -->
-
-
-
-## Introduction
-
-- Qu'est-ce que le Big Data ?
-- Cas d'usage du Big Data
-- La data science
-- **Dataviz**
-- Les métiers du Big Data
-
-
-
-# Dataviz
-
-<!-- .slide: class="page-title" -->
-
-
-
-## Introduction
-
-- Qu'est-ce que le Big Data ?
-- Cas d'usage du Big Data
-- La data science
-- Dataviz
-- **Les métiers du Big Data**
-
-
-
-# Les métiers du Big Data
 
 <!-- .slide: class="page-title" -->
 

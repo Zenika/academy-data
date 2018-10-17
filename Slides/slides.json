@@ -1,9 +1,9 @@
 [
   "00_plan.md",
   "01_introduction.md",
-  "02_git.md",
-  "03_local.md",
-  "04_references.md",
-  "05_remote.md",
-  "06_configuration_and_tools.md"
+  "02_systeme_distribue.md",
+  "03_cluster.md",
+  "04_spark.md",
+  "05_outils.md",
+  "06_rgpd.md"
 ]
