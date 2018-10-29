@@ -138,49 +138,81 @@ Production et collecte en temps réel, semi-réel ou limité
 
 ## Les 4 V avec la véracité
 
+- Erreur dans les données
+- Problème des données déclaratives
+- Faux profils
+
 
 
 ## Les 5 V avec la valeur
+
+- Attention à l'infobésité
+- Savoir faire le tri
 
 
 
 ## Objectifs d'un projet Big Data
 
+- Prise de décision
+- Connaissance client
+- Réduction des coûts
+
+
 
 
 ## L'entreprise a-t-elle besoin de Big Data ?
+
+- Base de données explosives
+- Sources de données non structurées
+- Information en temps réel
+- Peu d'analyse de données
+- De la valeur à tirer des données
 
 
 
 ## Méthodologie itérative
 
+- Agilité aussi dans la data
+- Incréments pour sortir de la valeur rapidement
+
 
 
 ## Equipe pluridisciplinaire
+
+- Utilisateurs finaux
+- Product owners
+- Développeurs
+- Scientifiques
 
 
 
 ## Sources de données internes
 
+- Facturation
+- CRM
+- ERP
+- Processus
+
 
 
 ## Sources de données externes
 
-
-
-## IOT
-
-
-
-## Données croisées
-
-
-
-## Données externes
+- Autres sites
+- Partenaires
+- Public
+- Réseaux sociaux
 
 
 
 ## Open Data
+
+- Plein de portails
+
+
+
+## Données croisées
+ 
+- Génère de la valeur
 
 
 
@@ -197,6 +229,70 @@ Production et collecte en temps réel, semi-réel ou limité
 # Cas d'usage du Big Data
 
 <!-- .slide: class="page-title" -->
+
+
+
+## Connaître ses utilisateurs
+- Prendre de meilleures décisions
+- Faire évoluer le service
+- AB Testing
+- Personnaliser
+
+
+
+## Prendre de meilleures décisions
+
+- Dashboards
+- Décisions éclairées
+
+
+
+## Faire évoluer le service
+
+- Meilleure connaissance utilisateurs
+- Meilleures idées
+
+
+
+## AB Testing
+
+- Faire valider ses idées scientifiquement
+
+
+
+## Personnaliser
+
+- Segmentation
+- Adaptation aux segments
+
+
+
+## Savoir comment vendre son produit
+
+- Connaître ses concurrents
+- Connaître les réactions clients/utilisateurs
+- Connaître le marché
+- S'y adapter
+
+
+
+## Connaître ses concurrents
+
+- Statistiques de prix selon caractéristiques
+
+
+
+## Connaître les réactions clients/utilisateurs
+
+- Etude des réseaux sociaux
+
+
+
+## Connaître le marché
+
+- Segments marché
+- Ce qui se vent
+- Phase de vie produit
 
 
 
@@ -247,6 +343,25 @@ Production et collecte en temps réel, semi-réel ou limité
 
 <!-- .slide: class="page-title" -->
 
+
+
+## Data ingénieur
+
+
+
+## Data scientiste
+
+
+
+## Data analyste
+
+
+
+## Développeur dataviz
+
+
+
+## Product owner, product manager, etc
 
 
 
