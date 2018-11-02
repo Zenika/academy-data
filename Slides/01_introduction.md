@@ -119,20 +119,33 @@ Le big data, littéralement « grosses données », ou mégadonnées (recommand�
 
 ## Volume
 
-- Quantité
-- Difficile à gérer dans une base deonnée classiques
+<figure>
+      <img src="ressources/images/01_introduction/quantity.jpeg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
+</br>
+
+*=> Difficile à gérer dans une base donnée classique*
+
 
 
 
 ## Variété
 
-Différentes sortes de données
+<figure>
+      <img src="ressources/images/01_introduction/variety.jpeg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
 
 
 
 ## Vélocité
 
 Production et collecte en temps réel, semi-réel ou limité
+
+<figure>
+      <img src="ressources/images/01_introduction/velocity.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
 
 
 
@@ -146,8 +159,13 @@ Production et collecte en temps réel, semi-réel ou limité
 
 ## Les 5 V avec la valeur
 
-- Attention à l'infobésité
-- Savoir faire le tri
+<figure>
+      <img src="ressources/images/01_introduction/gold.jpeg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
+<br/>
+ *\#infobésité #tri*
+
 
 
 
@@ -174,6 +192,11 @@ Production et collecte en temps réel, semi-réel ou limité
 
 - Agilité aussi dans la data
 - Incréments pour sortir de la valeur rapidement
+
+<figure>
+      <img src="ressources/images/01_introduction/flexible.jpeg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
 
 
 
@@ -206,13 +229,20 @@ Production et collecte en temps réel, semi-réel ou limité
 
 ## Open Data
 
-- Plein de portails
+
+<figure>
+      <img src="ressources/images/01_introduction/open.jpeg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
 
 
 
 ## Données croisées
- 
-- Génère de la valeur
+
+
+<figure>
+      <img src="ressources/images/01_introduction/cross.jpeg" style="margin: 0 auto; width: 75%"/>
+</figure>
 
 
 
@@ -313,6 +343,59 @@ Production et collecte en temps réel, semi-réel ou limité
 
 
 
+## Définition
+
+> > 
+En termes généraux, la science des données est l'extraction de connaissance d'ensembles de données.
+
+> > 
+Elle emploie des techniques et des théories tirées de plusieurs autres domaines plus larges des mathématiques, la statistique principalement, la théorie de l'information et la technologie de l'information, etc (*Wikipedia*)
+
+
+
+
+## Exemple avec la validation statistiques sur AB Testing
+
+- Statistiques fréquentistes
+- Statistiques bayésiennes
+
+
+
+## Machine learning
+
+- Apprendre sans être explicitement programmé
+- Branche de l'intelligence artificelle
+
+
+
+## Machine learning supervisé
+
+- Avec un modèle
+- Phase d'apprentissage -> Phase d'utilisation
+- Ex : un filtre antispam
+
+
+
+
+## Régression linéaire par exemple
+
+
+
+
+## Machine learning non supervisé
+- Pas de modèle
+- Système de clustering, regroupement
+- Ex : si deux fleurs ont la même forme => même plante
+
+
+
+## Ses applications en général
+- Détection de fraude
+- Reconnaissance faciale
+- Diagnostic médical
+
+
+
 ## Introduction
 
 - Qu'est-ce que le Big Data ?
@@ -326,6 +409,37 @@ Production et collecte en temps réel, semi-réel ou limité
 # Dataviz
 
 <!-- .slide: class="page-title" -->
+
+
+
+## Définition
+
+> > 
+Une représentation graphique de données statistiques ou visualisation de données statistiques est un résumé visuel des données statistiques chiffrées.
+
+> > Elle permet en un seul coup d'œil d'en saisir la tendance générale (*Wikipedia*).
+
+
+
+## Exemple ancien
+
+
+
+## Exemple récent
+
+
+
+## Quelques chiffres
+- 90 % de l'information arrivant au cerveau est visuelle
+- Images traitées 60 000 fois plus vite que le texte
+
+
+
+## Les outils
+- QlikView
+- Tableau
+- Superset
+- D3.js
 
 
 
@@ -346,36 +460,40 @@ Production et collecte en temps réel, semi-réel ou limité
 
 
 ## Data ingénieur
+- Développeur
+- Hadoop, Spark, Kafka, Flink, NoSQL, TensorFlow
+- Scala, Python, Java, R
 
 
 
 ## Data scientiste
+- Définit des modèles pour faire parler les données
+- SQL, R, Python
+- Data science, machine learning
 
 
 
 ## Data analyste
+- Explorateur des données
+- Capacité d'analyse
+- SQL
+
+
+
+## OPS Data
+- Plateformes Big Data
+- Cluster
 
 
 
 ## Développeur dataviz
+- Data visualisation
+- Plus ou moins technique
 
 
 
 ## Product owner, product manager, etc
-
-
-
-## En bref
-
-- Les DVCSs ont donc l'avantage d'être indépendants
-  - on peut versionner du travail pas tout à fait fini
-  - il est facile de faire un "fork" et de créer son propre projet (pratique dans l'open-source)
-  - le travail est fait en local, pas besoin de connexion réseau pour toutes les opérations
-  - chaque dépôt contient toutes les informations, il est impossible de perdre des données propagées
-  - l'échange des modifications suit un workflow adapté/adaptable
-- Et aucune de ces capacités n'est spécifique à Git !
-
-Notes :
+- Spécialisé data
 
 
 
