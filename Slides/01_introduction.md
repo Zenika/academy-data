@@ -110,7 +110,7 @@ Le big data, littéralement « grosses données », ou mégadonnées (recommand�
 
 
 
-## Les 3 V
+## Les 3 V de Gartner
 
 - Une manière de définir simplement le Big Data
 - Autour de 3 axes
@@ -270,10 +270,20 @@ Production et collecte en temps réel, semi-réel ou limité
 
 
 
-## Prendre de meilleures décisions
+## Prendre de meilleures décisions avec des dashboards
 
-- Dashboards
-- Décisions éclairées
+<figure>
+      <img src="ressources/images/01_introduction/dashboard.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
+
+
+## Décisions éclairées
+
+<figure>
+      <img src="ressources/images/01_introduction/vue.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
 
 
 
@@ -288,12 +298,20 @@ Production et collecte en temps réel, semi-réel ou limité
 
 - Faire valider ses idées scientifiquement
 
+<figure>
+      <img src="ressources/images/01_introduction/science.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
 
 
 ## Personnaliser
 
 - Segmentation
 - Adaptation aux segments
+
+<figure>
+      <img src="ressources/images/01_introduction/segmentation.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
 
 
 
@@ -310,11 +328,19 @@ Production et collecte en temps réel, semi-réel ou limité
 
 - Statistiques de prix selon caractéristiques
 
+<figure>
+      <img src="ressources/images/01_introduction/statistics.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
 
 
 ## Connaître les réactions clients/utilisateurs
 
 - Etude des réseaux sociaux
+
+<figure>
+      <img src="ressources/images/01_introduction/social.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
 
 
 
@@ -366,6 +392,10 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 - Apprendre sans être explicitement programmé
 - Branche de l'intelligence artificelle
 
+<figure>
+      <img src="ressources/images/01_introduction/ia.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
 
 
 ## Machine learning supervisé
@@ -374,10 +404,18 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 - Phase d'apprentissage -> Phase d'utilisation
 - Ex : un filtre antispam
 
+<figure>
+      <img src="ressources/images/01_introduction/spam.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
+
 
 
 
 ## Régression linéaire par exemple
+
+<figure>
+      <img src="ressources/images/01_introduction/linear.png" style="margin: 0 auto; width: 75%"/>
+</figure>
 
 
 
@@ -386,6 +424,10 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 - Pas de modèle
 - Système de clustering, regroupement
 - Ex : si deux fleurs ont la même forme => même plante
+
+<figure>
+      <img src="ressources/images/01_introduction/cluster.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
 
 
 
@@ -408,6 +450,8 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 
 # Dataviz
 
+Data vizualisation - Visualisation de données
+
 <!-- .slide: class="page-title" -->
 
 
@@ -421,11 +465,19 @@ Une représentation graphique de données statistiques ou visualisation de donn�
 
 
 
-## Exemple ancien
+## Exemple de la vie courante
+
+<figure>
+      <img src="ressources/images/01_introduction/australia.jpg" style="margin: 0 auto; width: 75%"/>
+</figure>
 
 
 
-## Exemple récent
+## Exemple professionel
+
+<figure>
+      <img src="ressources/images/01_introduction/grahics.png" style="margin: 0 auto; width: 75%"/>
+</figure>
 
 
 
