@@ -142,7 +142,8 @@ Le big data, littéralement « grosses données », ou mégadonnées (recommand�
 ## Vélocité
 
 Production et collecte en temps réel, semi-réel ou limité
-
+<br/>
+<br/>
 <figure>
       <img src="ressources/images/01_introduction/velocity.jpg" style="margin: 0 auto; width: 75%"/>
 </figure>
@@ -193,6 +194,7 @@ Production et collecte en temps réel, semi-réel ou limité
 - Agilité aussi dans la data
 - Incréments pour sortir de la valeur rapidement
 
+<br/>
 <figure>
       <img src="ressources/images/01_introduction/flexible.jpeg" style="margin: 0 auto; width: 75%"/>
 </figure>
@@ -273,7 +275,7 @@ Production et collecte en temps réel, semi-réel ou limité
 ## Prendre de meilleures décisions avec des dashboards
 
 <figure>
-      <img src="ressources/images/01_introduction/dashboard.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/01_introduction/dashboard.jpg" style="margin: 0 auto; width: 60%"/>
 </figure>
 
 
@@ -298,6 +300,7 @@ Production et collecte en temps réel, semi-réel ou limité
 
 - Faire valider ses idées scientifiquement
 
+<br/>
 <figure>
       <img src="ressources/images/01_introduction/science.jpg" style="margin: 0 auto; width: 75%"/>
 </figure>
@@ -308,7 +311,7 @@ Production et collecte en temps réel, semi-réel ou limité
 
 - Segmentation
 - Adaptation aux segments
-
+<br/><br/>
 <figure>
       <img src="ressources/images/01_introduction/segmentation.jpg" style="margin: 0 auto; width: 75%"/>
 </figure>
@@ -327,7 +330,7 @@ Production et collecte en temps réel, semi-réel ou limité
 ## Connaître ses concurrents
 
 - Statistiques de prix selon caractéristiques
-
+<br/><br/>
 <figure>
       <img src="ressources/images/01_introduction/statistics.jpg" style="margin: 0 auto; width: 75%"/>
 </figure>
@@ -337,7 +340,7 @@ Production et collecte en temps réel, semi-réel ou limité
 ## Connaître les réactions clients/utilisateurs
 
 - Etude des réseaux sociaux
-
+<br/><br/>
 <figure>
       <img src="ressources/images/01_introduction/social.jpg" style="margin: 0 auto; width: 75%"/>
 </figure>
@@ -392,8 +395,9 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 - Apprendre sans être explicitement programmé
 - Branche de l'intelligence artificelle
 
+<br/> 
 <figure>
-      <img src="ressources/images/01_introduction/ia.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/01_introduction/ia.jpg" style="margin: 0 auto; width: 60%"/>
 </figure>
 
 
@@ -404,8 +408,9 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 - Phase d'apprentissage -> Phase d'utilisation
 - Ex : un filtre antispam
 
+<br/>
 <figure>
-      <img src="ressources/images/01_introduction/spam.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/01_introduction/spam.jpg" style="margin: 0 auto; width: 60%"/>
 </figure>
 
 
@@ -425,8 +430,9 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 - Système de clustering, regroupement
 - Ex : si deux fleurs ont la même forme => même plante
 
+<br/>
 <figure>
-      <img src="ressources/images/01_introduction/cluster.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/01_introduction/flowers.jpg" style="margin: 0 auto; width: 60%"/>
 </figure>
 
 
@@ -450,7 +456,6 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 
 # Dataviz
 
-Data vizualisation - Visualisation de données
 
 <!-- .slide: class="page-title" -->
 
@@ -468,7 +473,7 @@ Une représentation graphique de données statistiques ou visualisation de donn�
 ## Exemple de la vie courante
 
 <figure>
-      <img src="ressources/images/01_introduction/australia.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/01_introduction/australia.jpg" style="margin: 0 auto; width: 45%"/>
 </figure>
 
 

@@ -88,7 +88,7 @@ Système distribué
 ## Cloudera
 
 <figure>
-      <img src="ressources/images/03_cluster/cloudera.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/03_cluster/cloudera.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -96,7 +96,7 @@ Système distribué
 ## Hortonworks avec Ambari
 
 <figure>
-      <img src="ressources/images/03_cluster/ambari.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/03_cluster/ambari.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -104,7 +104,7 @@ Système distribué
 ## MapR 
 
 <figure>
-      <img src="ressources/images/03_cluster/mapr.png" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/03_cluster/mapr.png" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -112,7 +112,7 @@ Système distribué
 ## Fusion
 
 <figure>
-      <img src="ressources/images/03_cluster/fusion.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/03_cluster/fusion.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 

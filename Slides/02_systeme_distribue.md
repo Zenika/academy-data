@@ -33,13 +33,11 @@
 
 ## Une autre solution
 
->> “In pioneer days they used oxen for heavy
+>> In pioneer days they used oxen for heavy
    pulling, and when one ox couldn’t budge a
    log, we didn’t try to grow a larger ox. We
    shouldn’t be trying for bigger computers,
-   but for more systems of computers.”
-
->> —Grace Hopper
+   but for more systems of computers. (**Grace Hopper**)
 
 
 
@@ -55,7 +53,7 @@
 
 ## Notion de fichiers distribués
 <figure>
-      <img src="ressources/images/02_systeme_distribue/blocks.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/blocks.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -63,7 +61,7 @@
 ## Notion de racks
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/racks.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/racks.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -71,7 +69,7 @@
 ## HDFS (suite Hadoop)
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/hdfs.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/hdfs.jpg" style="margin: 0 auto; width: 90%"/>
 </figure>
 
 
@@ -79,7 +77,8 @@
 ## DataLake (Lac de données)
 >>  Un lac de données (en anglais data lake) est une méthode de stockage des données utilisée par le big data (mégadonnées en français). Ces données sont gardées dans leurs formats originaux ou sont très peu (**Wikipedia**)
 
-*Centralisation*
+<br/><br/>
+*=> Centralisation*
 
 
 
@@ -94,7 +93,7 @@
 
 <br/></br/><br/> 
 
-*Notion d'utilisateur HDFS*
+*=> Notion d'utilisateur HDFS*
 
 
 
@@ -159,7 +158,7 @@
 ## Tâches distribuées
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/computing.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/computing.jpg" style="margin: 0 auto; width: 90%"/>
 </figure>
 
 
@@ -167,7 +166,7 @@
 ## Tâches distribuées en rapport avec la donnée
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/data.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/data.jpg" style="margin: 0 auto; width: 90%"/>
 </figure>
 
 
@@ -175,7 +174,7 @@
 ## Data locality
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/here.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/here.jpg" style="margin: 0 auto; width: 60%"/>
 </figure>
 
 
@@ -183,7 +182,7 @@
 ## Data local
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/local.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/local.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -191,7 +190,7 @@
 ## Intra rack
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/intra_rack.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/intra_rack.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -199,7 +198,7 @@
 ## Inter rack
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/inter_rack.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/inter_rack.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -230,7 +229,7 @@
 ## Exemple avec YARN (suite Hadoop)
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/yarn.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/yarn.jpg" style="margin: 0 auto; width: 90%"/>
 </figure>
 
 
@@ -238,7 +237,7 @@
 ## YARN + HDFS
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/yarn_hdfs.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/yarn_hdfs.jpg" style="margin: 0 auto; width: 90%"/>
 </figure>
 
 
@@ -246,7 +245,7 @@
 ## Hadoop Map Reduce en action avec YARN pour la data locality
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/map_reduce.jpg" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/02_systeme_distribue/map_reduce.jpg" style="margin: 0 auto; width: 80%"/>
 </figure>
 
 
