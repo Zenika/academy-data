@@ -66,10 +66,10 @@
 
 
 
-## HDFS (suite Hadoop)
+## HDFS (Hadoop Distributed File System, suite Hadoop)
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/hdfs.jpg" style="margin: 0 auto; width: 90%"/>
+      <img src="ressources/images/02_systeme_distribue/hdfs.jpg" style="margin: 0 auto; width: 80%"/>
 </figure>
 
 
@@ -226,10 +226,10 @@
 
 
 
-## Exemple avec YARN (suite Hadoop)
+## Exemple avec YARN (YET ANOTHER RESOURCE NEGOTIATOR, suite Hadoop)
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/yarn.jpg" style="margin: 0 auto; width: 90%"/>
+      <img src="ressources/images/02_systeme_distribue/yarn.jpg" style="margin: 0 auto; width: 80%"/>
 </figure>
 
 
