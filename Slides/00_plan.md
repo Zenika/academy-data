@@ -6,7 +6,7 @@
 
 ## Objectifs
 
-- Le but de ce cours est de préparer les participants au monde de la data
+- Le but de ce cours est d'initier les participants au monde de la data
 
 ## Plan
 
