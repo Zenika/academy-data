@@ -419,7 +419,7 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 ## Régression linéaire par exemple
 
 <figure>
-      <img src="ressources/images/01_introduction/linear.png" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/01_introduction/linear.jpg" style="margin: 0 auto; width: 75%"/>
 </figure>
 
 
@@ -481,7 +481,7 @@ Une représentation graphique de données statistiques ou visualisation de donn�
 ## Exemple professionel
 
 <figure>
-      <img src="ressources/images/01_introduction/grahics.png" style="margin: 0 auto; width: 75%"/>
+      <img src="ressources/images/01_introduction/grahics.jpg" style="margin: 0 auto; width: 75%"/>
 </figure>
 
 

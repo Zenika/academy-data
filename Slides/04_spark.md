@@ -66,7 +66,7 @@
 ## Qui utilise Spark ?
 
 <figure>
-      <img src="ressources/images/04_spark/spark_uses.png" style="margin: 0 auto; width: 100%"/>
+      <img src="ressources/images/04_spark/spark_uses.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -74,7 +74,7 @@
 ## Pourquoi faire ?
 
 <figure>
-      <img src="ressources/images/04_spark/usages.png" style="margin: 0 auto; width: 100%"/>
+      <img src="ressources/images/04_spark/usages.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -82,7 +82,7 @@
 ## Différents langages 
 
 <figure>
-      <img src="ressources/images/04_spark/languages.png" style="margin: 0 auto; width: 65%"/>
+      <img src="ressources/images/04_spark/languages.jpg" style="margin: 0 auto; width: 65%"/>
 </figure>
 
 

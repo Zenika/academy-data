@@ -33,11 +33,7 @@
 
 ## Une autre solution
 
->> In pioneer days they used oxen for heavy
-   pulling, and when one ox couldn’t budge a
-   log, we didn’t try to grow a larger ox. We
-   shouldn’t be trying for bigger computers,
-   but for more systems of computers. (**Grace Hopper**)
+>> On ne devrait pas chercher des ordinateurs plus puissants, mais plutôt plus de systèmes d'ordinateurs. (**Grace Hopper**)
 
 
 
@@ -69,7 +65,7 @@
 ## HDFS (Hadoop Distributed File System, suite Hadoop)
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/hdfs.jpg" style="margin: 0 auto; width: 80%"/>
+      <img src="ressources/images/02_systeme_distribue/hdfs.jpg" style="margin: 0 auto; width: 40%"/>
 </figure>
 
 
@@ -194,7 +190,7 @@
 ## Data local
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/local.jpg" style="margin: 0 auto; width: 100%"/>
+      <img src="ressources/images/02_systeme_distribue/local.jpg" style="margin: 0 auto; width: 30%"/>
 </figure>
 
 
@@ -202,7 +198,7 @@
 ## Intra rack
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/intra_rack.jpg" style="margin: 0 auto; width: 100%"/>
+      <img src="ressources/images/02_systeme_distribue/intra_rack.jpg" style="margin: 0 auto; width: 60%"/>
 </figure>
 
 
@@ -210,7 +206,7 @@
 ## Inter rack
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/inter_rack.jpg" style="margin: 0 auto; width: 100%"/>
+      <img src="ressources/images/02_systeme_distribue/inter_rack.jpg" style="margin: 0 auto; width: 60%"/>
 </figure>
 
 
@@ -241,7 +237,7 @@
 ## Exemple avec YARN (YET ANOTHER RESOURCE NEGOTIATOR, suite Hadoop)
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/yarn.jpg" style="margin: 0 auto; width: 80%"/>
+      <img src="ressources/images/02_systeme_distribue/yarn.jpg" style="margin: 0 auto; width: 40%"/>
 </figure>
 
 
@@ -249,7 +245,7 @@
 ## YARN + HDFS
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/yarn_hdfs.jpg" style="margin: 0 auto; width: 90%"/>
+      <img src="ressources/images/02_systeme_distribue/yarn_hdfs.jpg" style="margin: 0 auto; width: 40%"/>
 </figure>
 
 
@@ -257,7 +253,7 @@
 ## Hadoop Map Reduce en action avec YARN pour la data locality
 
 <figure>
-      <img src="ressources/images/02_systeme_distribue/map_reduce.jpg" style="margin: 0 auto; width: 80%"/>
+      <img src="ressources/images/02_systeme_distribue/map_reduce.jpg" style="margin: 0 auto; width: 60%"/>
 </figure>
 
 

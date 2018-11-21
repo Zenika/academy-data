@@ -104,7 +104,7 @@ Système distribué
 ## MapR 
 
 <figure>
-      <img src="ressources/images/03_cluster/mapr.png" style="margin: 0 auto; width: 100%"/>
+      <img src="ressources/images/03_cluster/mapr.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 

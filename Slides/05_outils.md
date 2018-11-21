@@ -34,7 +34,7 @@
 ## Hive pour requêter les données en SQL
 
 <figure>
-      <img src="ressources/images/05_outils/hive_hdfs.png" style="width: 100%"/>
+      <img src="ressources/images/05_outils/hive_hdfs.jpg" style="width: 100%"/>
 </figure>
 
 
@@ -113,7 +113,7 @@ hive > select max(age) from people;
 
 ## Sqoop : de l'ingestion avec MapReduce
 <figure>
-      <img src="ressources/images/05_outils/sqoop.png" style="margin: 0 auto; width: 100%"/>
+      <img src="ressources/images/05_outils/sqoop.jpg" style="margin: 0 auto; width: 100%"/>
 </figure>
 
 
@@ -244,7 +244,7 @@ sqoop import \
 ## Schema
 
 <figure>
-      <img src="ressources/images/05_outils/kafka.png" style="width: 100%"/>
+      <img src="ressources/images/05_outils/kafka.jpg" style="width: 100%"/>
 </figure>
 
 
