@@ -125,6 +125,18 @@
 
 
 
+## Focus HDFS : Supprimer fichier
+
+`hdfs dfs -rm test`
+
+
+
+## Focus HDFS : Supprimer dossier
+
+`hdfs dfs -rm -r exemple`
+
+
+
 # TP 1 : HDFS
 
 <!-- .slide: class="page-title" -->

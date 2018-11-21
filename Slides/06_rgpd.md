@@ -30,7 +30,6 @@
 
 
 
-
 ## Définitions
 
 - GDPR : General Data Protection Regulation
@@ -151,6 +150,11 @@
 
 
 
+##Quizz pour se tester un peu 
+
+[Quizz RGPD](https://www.numerama.com/politique/377829-quiz-rgpd-etes-vous-au-point-sur-les-nouvelles-regles-de-protection-de-vos-donnees.html)
+
+
 
 ## Vidéo 
 
@@ -158,6 +162,10 @@
 [En collaboration avec la CNIL](https://www.youtube.com/watch?v=OUMGp3HHel4)
 
 
+
+## Quizz final 
+
+[Quizz final](https://www.ogury-gdpr.com/)
 
 
 

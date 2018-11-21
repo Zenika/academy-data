@@ -39,23 +39,52 @@
 
 
 
-## Créer une table avec Hive
+
+## Créer une base de données avec Hive
 
 ```sql
-CREATE TABLE people (
+CREATE DATABASE databasename;
+```
+
+
+
+## Supprimer une base de données avec Hive
+
+```sql
+DROP DATABASE databasename;
+```
+
+
+
+## Créer une table avec Hive à partir de données déjà existantes
+
+```sql
+CREATE EXTERNAL TABLE people (
 name STRING,
-age INT
+age BIGINT
 )
 STORED AS PARQUET
-LOCATION "path"
+LOCATION "path";
 ```
+<br/> <br/>
+**=>EXTERNAL est un mot-clef très important**
+
+
+
+## Supprimer une table
+
+```sql
+DROP TABLE people;
+```
+<br/> <br/>
+**=>Si la table a été créée sans le mot-clef EXTERNAL, les données seront elles aussi supprimées**
 
 
 
 ## Faire des requêtes dans Hive
 
 ```sql
-hive > select * from people
+hive > select max(age) from people;
 ```
 
 
@@ -97,8 +126,53 @@ sqoop import \
   --username retail_user \
   --password itversity \
   --table order_items \
-  --target-dir /user/dgadiraju/sqoop_import/retail_db/order_items
+  --target-dir /user/nastasiasaby/sqoop_import/retail_db/order_items
 ```
+<br/><br/>
+*--connect* : toujours en JDBC
+<br/>
+*--username* et *--password* : informations de connexion
+<br/>
+*--table* : la table qu'on veut importer
+<br/>
+*--target-dir* : où on souhaite l'importer
+
+
+
+## Sqoop import format par défaut
+
+- Par défaut, c'est du texte avec un delimiter *,*.
+<br/><br/>
+*=>Donc c'est du CSV*
+<br/><br/>
+On pourrait écrire :
+<br/>
+```
+sqoop import \
+  --connect jdbc:mysql://ms.itversity.com:3306/retail_db \
+  --username retail_user \
+  --password itversity \
+  --table order_items \
+  --target-dir /user/nastasiasaby/sqoop_import/retail_db/order_items
+  --as-textfile
+  --fields-terminated-by ","
+```
+
+
+
+## Sqoop import format parquet
+
+```
+sqoop import \
+  --connect jdbc:mysql://ms.itversity.com:3306/retail_db \
+  --username retail_user \
+  --password itversity \
+  --table order_items \
+  --target-dir /user/nastasiasaby/sqoop_import/retail_db/order_items
+  --as-parquetfile
+```
+<br/><br/>
+*=>as-parquetfile*
 
 
 
@@ -111,8 +185,10 @@ sqoop import \
   --password itversity \
   --table order_items \
   --columns order_item_order_id,order_item_id,order_item_subtotal \
-  --target-dir /user/dgadiraju/sqoop_import/retail_db/order_items
+  --target-dir /user/nastasiasaby/sqoop_import/retail_db/order_items
 ```
+<br/><br/>
+*=>columns*
 
 
 
@@ -123,9 +199,16 @@ sqoop import \
   --connect jdbc:mysql://ms.itversity.com:3306/retail_db \
   --username retail_user \
   --password itversity \
-  --target-dir /user/dgadiraju/sqoop_import/retail_db/orders_with_revenue \
+  --target-dir /user/nastasiasaby/sqoop_import/retail_db/orders_with_revenue \
   --query "select o.*, sum(oi.order_item_subtotal) order_revenue from orders o join order_items oi on o.order_id = oi.order_item_order_id and \$CONDITIONS group by o.order_id, o.order_date, o.order_customer_id, o.order_status"
+  --split-by order_id
 ```
+<br/><br/>
+*=>query et plus table*
+<br/>
+*=>and \$CONDITIONS*
+<br/>
+*=>split-by*
 
 
 
@@ -165,6 +248,10 @@ sqoop import \
 </figure>
 
 
+
+# TP 9 : Sqoop - Spark - Hive
+
+<!-- .slide: class="page-title" -->
 
 
 

@@ -391,14 +391,67 @@ Le résultat quand on fait un *show* doit être ainsi :
 <div class="pb"></div>
 
 
-## TP6 – Hive
+## TP7 – Hive
 
-- Définir les alias `st`, `ci` et `co` respectivement pour les commandes `status`, `commit` et `checkout`
-- Dans le projet actuel, ignorer certains fichiers
-  - Ceux commençant par un point
-  - Sauf **.gitignore** et **.project**
-  - Le dossier **tests** situé à la racine
-  - Le fichier **temp.txt** à la racine
-  
-  
-## TP7 – Sqoop
+### Objectifs
+
+Le but de ce TP est de prendre en mail l'outil *Hive*
+
+### Se connecter au lab
+
+- Se rendre sur cette adresse : [https://labs.itversity.com/user/lab](https://labs.itversity.com/user/lab)
+- S'y connecter
+- Cliquer sur console
+![](console.png)
+- La console s'ouvre
+![](consoleopen.png)
+- Cliquer sur l'icône *personnage* puis Ctrl + V pour entrer votre login
+- Faire *entrée*
+![](loginconsole.png)
+- Cliquer sur l'icône *clef* puis Ctrl + V pour entre votre mot de passe
+![](password.png)
+- Faire *entrée*
+
+
+
+### Lancer Hive
+
+- Lancer la commande *Hive*
+
+Une invite de commande s'ouvre
+
+
+## Créer une table à partir de données
+
+Astuces : vous aurez peut-être besoin d'aller voir (par exemple avec Spark) le schéma des données 
+
+- Créer une base de données avec votre login
+- Créer une table de données *order_number_status* lisant le résultat parquet de  */user/votrelogin/tp6*
+ 
+On doit pouvoir supprimer cette table sans risquer de supprimer les données liées.
+
+
+## TP8 – Sqoop
+
+Informations de connexion :
+
+jdbc : jdbc:mysql://ms.itversity.com:3306/retail_db
+</br>
+username : retail_user
+</br>
+password : itversity
+
+- Importer les données de la table *orders* au format csv (format text avec une *,* comme delimiter) dans HDFS */user/login/orders_csv*
+- Importer les données de la table *orders* au format parquet (on ne veut que les colonnes *order_date* et *order_status*) dans HDFS */user/login/orders_parquet*
+- Importer les données de la table *products* au format parquet (on ne veut que les *product_price* de plus de 100) dans HDFS */user/login/products*
+
+Astuces : vous pouvez vérifier avec Spark pour les formats parquet que le résultat est bien ce que vous attendiez
+
+## TP9 : Sqoop - Spark - Hive
+
+- Importer les données de la table *products* au format parquet dans HDFS */user/login/tp9*
+- Extraire le prix moyen arrondi à l'unité par categorie de ces données
+Dans le résultat, on ne veut que le prix arrondi à l'unit" renommé *avg_price* et le *product_category_id*
+- Enregistrer le résultat en parquet dans HDFS */user/login/tp9/result*
+- Créer une table *tp9* dans votre base de données permettant de lire ces données
+Cette table doit pouvoir être supprimé sans que les données soient supprimées.
