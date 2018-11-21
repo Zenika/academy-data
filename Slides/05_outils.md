@@ -60,7 +60,7 @@ hive > select * from people
 
 
 
-# TP 6 : Hive
+# TP 7 : Hive
 
 <!-- .slide: class="page-title" -->
 
@@ -129,7 +129,7 @@ sqoop import \
 
 
 
-# TP 7 : Sqoop
+# TP 8 : Sqoop
 
 <!-- .slide: class="page-title" -->
 

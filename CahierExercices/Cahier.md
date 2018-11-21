@@ -354,21 +354,38 @@ only showing top 20 rows
 
 ## TP5 – Ecrire un fichier avec Spark
 
-- Si l'accès à internet est disponible :
-  - Créer un compte sur https://github.com
-  - Créer un repository *formation-git-tp* sur le site, son adresse sera l'"origin" (https://github.com/YOUR_GITHUB_USERNAME/formation-git-tp.git)
-  - L'adresse https://github.com/Zenika/formation-git-tp.git sera "upstream"
-- S'il n'y a pas accès à internet :
-  - Créer un projet *origin* avec la commande `git init --bare origin.git`
-  - Le formateur donnera son adresse IP et l'accès à un projet Git "upstream"
-- Ajouter respectivement les dépôts distants
-  - *upstream* – fourni par le formateur
-  - *origin* – créé précédemment
-- Pour les deux dépôts récupérer le contenu actuel avec `git fetch` (en cas de problème de certificat SSL, configurer la variable d'environnement `GIT_SSL_NO_VERIFY` à `true`)
-- Envoyer le contenu de la branche *master* sur *origin* avec la commande `git push`
-- Envoyer tous les tags et toutes les branches restantes sur *origin*
-- Supprimer la branche *todo* sur *origin*
-- Récupérer la branche *design* depuis *upstream*, merger dans *master* (on devra utiliser l'option `--allow-unrelated-histories` car les 2 branches à merger n'ont pas d'historique commun) et mettre à jour *master* dans le dépôt *origin*
+- Enregistrer le dernier résultat en format parquet dans */user/votrelogin/tp5*
+- Relire ce résultat parquet et l'afficher en console avec la fonction *show*
+
+
+<div class="pb"></div>
+
+
+## TP6 – Spark de bout en bout
+
+- Lire le fichier json */public/retail_db_json/orders*
+- Définir le nombre d'*order_id* en le renommant *count_order_id* par *order_status*
+Le résultat quand on fait un *show* doit être ainsi : 
+
+```
++--------------+---------------+
+|count_order_id|   order_status|
++--------------+---------------+
+|         15030|PENDING_PAYMENT|
+|         22899|       COMPLETE|
+|          3798|        ON_HOLD|
+|           729| PAYMENT_REVIEW|
+|          8275|     PROCESSING|
+|          7556|         CLOSED|
+|          1558|SUSPECTED_FRAUD|
+|          7610|        PENDING|
+|          1428|       CANCELED|
++--------------+---------------+
+```
+
+- Enregistrer le tout en parquet dans */user/votrelogin/tp6*
+- Vous pouvez relire le résultat parquet et l'afficher en console avec la fonction *show*
+
 
 
 <div class="pb"></div>

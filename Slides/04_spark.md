@@ -284,6 +284,30 @@ group by color
 
 
 
+## Réaliser quelques autres statistiques
+
+```scala
+spark.sql("""
+select count(id) as count_id, color
+from diamonds
+group by color
+""").show
+
++--------+-----+                                                                
+|count_id|color|
++--------+-----+
+|    9542|    F|
+|    9797|    E|
+|    6775|    D|
+|    2808|    J|
+|   11292|    G|
+|    5422|    I|
+|    8304|    H|
++--------+-----+
+```
+
+
+
 ## Renommer des champs 
 
 ```scala
@@ -343,6 +367,11 @@ spark.read.parquet("path")
 
 <!-- .slide: class="page-title" -->
 
+
+
+# TP 6 : Spark de bout en bout
+
+<!-- .slide: class="page-title" -->
 
 
 
