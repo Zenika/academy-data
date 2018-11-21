@@ -87,8 +87,7 @@
 
 ## Les définitions du Big Data
 
-> > Une visualisation des données créée par IBM montre que les big data sur les modifications de Wikipedia par le robot Pearle ont plus de signification lorsqu'elles sont mises en valeur par des couleurs et des localisations.
-Le big data, littéralement « grosses données », ou mégadonnées (recommandé), parfois appelées données massives, désigne des ensembles de données devenus si volumineux qu'ils dépassent l'intuition et les capacités humaines d'analyse et même celles des outils informatiques classiques de gestion de base de données ou de l'information (*Larousse*)
+> > Le big data, littéralement « grosses données », ou mégadonnées (recommandé), parfois appelées données massives, désigne des ensembles de données devenus si volumineux qu'ils dépassent l'intuition et les capacités humaines d'analyse et même celles des outils informatiques classiques de gestion de base de données ou de l'information (*Larousse*)
 
 
 
@@ -383,7 +382,7 @@ Elle emploie des techniques et des théories tirées de plusieurs autres domaine
 
 
 
-## Exemple avec la validation statistiques sur AB Testing
+## Exemple avec la validation statistique sur AB Testing
 
 - Statistiques fréquentistes
 - Statistiques bayésiennes
