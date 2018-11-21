@@ -6,285 +6,353 @@
 <div class="pb"></div>
 
 
-## Présentation
-
-L'agence de voyages Resanet a décidé de lancer le projet "resaroute", ce projet a pour but de créer une application unique d'aspiration d'informations sur les sites de transports publics tels celui de la SNCF.
-
-Les premières idées du projet sont présentes et vont évoluer au fur et à mesure.
-Le projet va aussi devoir débuter sous peu. Un système de versioning va devenir plus qu'important.
-
-L'objectif principal est de mettre en place et gérer les premiers événements de ce dépôt Git.
-
-
 <div class="pb"></div>
 
 
-## TP1 – Installation et création du dépôt Git
+## TP1 – HDFS
 
 ### Objectif
 
-Ce premier TP va nous permettre de mettre en place un dépôt Git en local.
+Ce premier TP va nous permettre de prendre en main HDFS.
 
-L'objectif est d'installer et démarrer le projet resaroute avec les outils nécessaires.
+Afin de développer plus rapidement et se donner une idée de ce qu'est un cluster data, nous allons travailler avec un lab.
 
-### Installation de Git
+Celui-ci est à l'adresse suivante : [https://labs.itversity.com/user/lab](https://labs.itversity.com/user/lab).
 
-- Télécharger l'installeur de Git pour la plateforme utilisée et lancer l'installation
-  - Pour Windows, utiliser msysgit : http://msysgit.github.com/ ou Cygwin : http://cygwin.com/
-  - Sous Linux utiliser le gestionnaire de dépôts de la distribution
-  - Avec Mac OS X installer avec git-osx-installer : http://code.google.com/p/git-osx-installer
-- Afin de vérifier que l'environnement est installé utiliser la commande `git --version`
+Il s'agit d'un cluster partagé par beaucoup d'inconnus du monde entier.
+Il contient plusieurs outils data.
 
-### Première configuration
+### Accès au lab
 
-- Avant de commencer avec le projet en lui-même il est important d'avoir certains éléments de configuration prêts
-  - Configurer le nom et l'adresse e-mail de l'utilisateur principal
-  - Configurer l'éditeur qui sera utilisé
-    - Sous Mac OS/Linux : vi/vim, emacs ou nano
-    - Sous Windows : notepad.exe ou notepad++.exe (attention aux espaces et aux antislash : utiliser des guillemets autour du chemin ainsi que des simples slash)
-  - Configurer l'affichage en couleur en définissant la clé de configuration `color.ui` à `auto`
+- Se rendre sur [https://labs.itversity.com/user/lab](https://labs.itversity.com/user/lab).
+![](itversity1.png)
 
-### Initialisation du projet
+- Cliquer sur *login* et se connecter
+![](login.png)
 
-- Initialiser le projet resaroute avec la commande `git init`.
+- Choisir l'option *Exclusive Labs*
+![](itversity3.png)
 
+- Choisir l'option *Monthly*
+![](monthly.png)
+
+- Valider le paiement 
+![](coupon.png)
+
+- Payer avec la carte Zenika
+![](paypal.png)
+
+- M'envoyer le reçu que vous avez par mail à *nastasia.saby@zenika.com*
+
+### Se connecter au lab
+
+- Se rendre sur cette adresse : [https://labs.itversity.com/user/lab](https://labs.itversity.com/user/lab)
+- S'y connecter
+- Cliquer sur console
+![](console.png)
+- La console s'ouvre
+![](consoleopen.png)
+- Cliquer sur l'icône *personnage* puis Ctrl + V pour entrer votre login
+- Faire *entrée*
+![](loginconsole.png)
+- Cliquer sur l'icône *clef* puis Ctrl + V pour entre votre mot de passe
+![](password.png)
+- Faire *entrée*
 
 <div class="pb"></div>
 
+### Lancer des commandes HDFS dans votre environnement HDFS
 
-## TP2 – Démarrage du projet
+- Faire un *hdfs dfs -ls*, un *hdfs dfs -ls /user* ainsi qu'un *hdfs dfs -ls /user/votrelogin* et noter la différence
+
+- Créer un fichier en tapant la commande *echo hello world ! > hello.txt*
+
+- Si vous faîtes *ls* vous devriez voir votre fichier
+
+- Créer un dossier *tp1* HDFS dans */user/votrelogin*
+
+- Si vous faîtes *hdfs dfs -ls /user/votrelogin* ou *hdfs dfs -ls*, vous devriez le voir apparaître
+
+- Mettre le fichier *hello.txt* dans */user/votrelogin/tp1*
+
+- Si vous faîtes *hdfs dfs -ls /user/votrelogin/tp1* ou *hdfs dfs -ls tp1*, vous devriez le voir apparaître
+
+
+### Lancer des commandes HDFS dans un autre environnement que le vôtre
+
+- Lancer la commande *hdfs dfs -ls /* et noter qu'il y a d'autres dossiers que *user*. 
+Plusieurs servent au bon fonctionnement d'outils présents sur le cluster comme Spark par exemple.
+
+Il y a aussi un dossier */public*. C'est là que nous pouvons trouver des fichiers d'exemple.
+
+- Afficher le contenu du dossier */public/retail_db_json/products*
+
+Il y a deux fichiers : *SUCCESS* est un fichier qui sert à la machine. Le deuxième fichier contient un réel contenu.
+
+- Afficher la fin du fichier */public/retail_db_json/products/part-r-00000-158b7037-4a23-47e6-8cb3-8cbf878beff7*
+
+- Afficher l'entièreté du fichier */public/retail_db_json/products/part-r-00000-158b7037-4a23-47e6-8cb3-8cbf878beff7*
+
+- Récupérer chez vous le fichier */public/retail_db_json/products/part-r-00000-158b7037-4a23-47e6-8cb3-8cbf878beff7* sous le nom de *products.json*
+
+
+### Comprendre HDFS de l'intérieur
+
+- Se rendre sur [http://nn01.itversity.com:50070/dfshealth.html#tab-overview](http://nn01.itversity.com:50070/dfshealth.html#tab-overview)
+
+Nous sommes là dans les informations du NameNode HDFS présentées de manière graphique.
+
+- Cliquer sur *Utilities/Browse the file system*
+![](browse.png)
+
+Par là, on peut naviguer en mode graphique dans les fichiers et dossiers HDFS 
+![](ls.png)
+
+- Se rendre dans */public/retail_db_json/products*
+
+- Cliquer sur *part-r-00000-158b7037-4a23-47e6-8cb3-8cbf878beff7*
+
+Une popup s'affiche.
+![](popup.png)
+
+Les informations en dessous de *Availability* nous disent sur quels noeuds est stocké physiquement le fichier.
+
+*Block information* nous donne le nombre de blocks pour ce fichier. 
+A noter qu'ici, il n'y en a qu'un.
+
+Nous avons donc un fichier qui n'est qu'en un block répliqué sur 3 noeuds différents.
+
+## TP2 – Prendre en main Ambari
 
 ### Objectif
 
-Le projet étant démarré, les premières idées vont être versionnées pour voir leur évolution et permettre de retracer les différentes idées.
+Ambari est le service de Hortonworks qui nous permet d'installer, maintenir, gérer et comprendre notre cluster data. 
 
-### Première idée
+### S'y connecter
 
-- Créer à la racine un fichier **README.txt** contenant une description du projet (texte de présentation de ce TP) ainsi que **TODO.txt** contenant quelques idées :
+- Se rendre sur la page [https://labs.itversity.com/user/lab](https://labs.itversity.com/user/lab)
+- Cliquer sur *Ambari*
+![](ambari.png)
 
-```
-Sites à scanner :
- - voyages-sncf.com
- - ryanair.com
- - eurolines.fr
- - eurostar.com
+- Utiliser les identifiants du lab pour se connecter
+![](login_ambari.png)
 
-Couleurs de l'application :
-Rouge sur fond vert
+- Repérer sur la gauche le nombre d'outils installés
+![](tools.png)
 
-Titre de l'application :
-Resaspi
-```
+- Repérer les métriques
+![](metrics.png)
 
-- Indexer les fichiers **TODO.txt** et **README.txt**
-- Grâce à la commande `git status` vérifier que les deux fichiers sont à être commités
+### Comprendre le système de *Hosts*
 
-### Validation des idées
+- Cliquer sur *Hosts*
 
-- Afin de séparer l'ajout des deux fichiers dans deux commits différents, supprimer **TODO.txt** de l'index actuel puis commiter
-  - Titre : "Initialisation du projet"
-  - Contenu : "Ajout du fichier README.txt décrivant le projet"
-- Puis re-indexer le fichier **TODO.txt** et commiter
-  - Titre : "Définition des tâches à effectuer"
-  - Contenu : "Création du fichier TODO.txt listant toutes les tâches actuellement prévues pour le projet"
-- Vérifier que les deux fichiers sont biens commités dans deux commits différents avec la commande `git log`
+Nous avons là la liste des machines avec leur nom et des informations dessus.
+![](hosts.png)
 
-### Retour vers le premier commit
+- Quand on clique sur les liens dans la colonne *Components*
+![](components_column.png)
+on obtient la liste des éléments installés sur la machine 
+![](components.png)
 
-- Afin de préparer la création des futures branches, dont une pour gérer la todolist, remontez au commit initial avec la commande `git checkout` et le hash du premier commit qui est accessible depuis le log (attention à l'ordre des commits affichés par la commande `git log`)
-- Lister le contenu du dossier
+- Combien y a-t-il de machines en tout dans notre cluster ?
+
+- Combien y a-t-il de racks ?
+
+- Sur quelle machine le NameNode HDFS (master) est installé ?
+
+- Sur quelle machine le ResourceManager YARN (master) est installé ?
+
+- Sur quelles machines sont installées les DataNode HDFS (workers) ?
+
+- Sur quelles machines sont installées les NodeManager YARN (workers) ?
+
+
+### Comprendre le système de *Services*
+
+- Cliquer sur *Services* et repérer la liste des services
+
+- Choisir *HDFS*
+
+- Cliquer sur *Quick Links* et choisir *NameNode UI*
+![](quicklinks.png)
+
+La page qui s'ouvre est celle de tout à l'heure.
+![](same.png)
+Ambari permet d'accéder à toutes les interfaces graphiques des services.
 
 
 <div class="pb"></div>
 
 
-## TP3 – Débranches, des branches
+## TP3 – Lire un fichier avec Spark
 
 ### Objectif
 
-Pour gérer le projet de façon propre, de nouvelles branches permettant de gérer le **TODO.txt** et le début du projet vont devoir être créées.
+Avec cet exercice, nous allons commencer à prendre en main Spark.
+Pour cela, nous n'allons pas créer un vrai programme, mais nous servir du *spark-shell*.
 
-### 1. La branche *master*
+Le *spark-shell* est un REPL qui inclut du Scala et du Spark.
 
-- Regarder l'état de l'arbre des commits avec la commande `git log --graph --oneline --decorate --all`
-- Faire revenir la branche *master* au commit actuel avec la commande `git branch -f`
-- Regarder l'état des branches avec un `git branch` + un `git log --graph --oneline --decorate --all`. Expliquer.
+A noter qu'il existe aussi *pySpark* qui est un REPL qui inclut du Python et du Spark.
 
-### 2. La branche *todo*
+Etant donnée que Spark est écrit en Scala, qu'il n'y a pas de REPL Java pour Spark et que Scala est le langage le plus utilisé avec Spark, je vous propose de nous concentrer sur *spark-shell*.
 
-- Créer depuis la position actuelle la branche *todo*, qui, comme son nom l'indique, servira à gérer le contenu du fichier **TODO.txt**
-- Regarder l'état des branches avec un `git branch`. Expliquer.
-- Se positionner sur la branche *todo*
-- Créer le nouveau fichier **TODO.txt** :
+### Se connecter au lab
 
-```
-Sites à scanner :
- - voyages-sncf.com
- - ryanair.com
- - eurolines.fr
- - eurostar.com
+- Se rendre sur cette adresse : [https://labs.itversity.com/user/lab](https://labs.itversity.com/user/lab)
+- S'y connecter
+- Cliquer sur console
+![](console.png)
+- La console s'ouvre
+![](consoleopen.png)
+- Cliquer sur l'icône *personnage* puis Ctrl + V pour entrer votre login
+- Faire *entrée*
+![](loginconsole.png)
+- Cliquer sur l'icône *clef* puis Ctrl + V pour entre votre mot de passe
+![](password.png)
+- Faire *entrée*
 
-Langage de programmation de l'application :
-Java
+### Lancer *spark-shell*
 
-Serveur d'application :
-tomcat 7
+Il y a deux versions de Spark qui cohabite sur le cluster : Spark 1 et Spark 2.
 
-Couleurs de l'application :
-Rouge sur fond vert
+Si on tape seulement *spark-shell*, on aura Spark1. Mais nous voulons la dernière version de Spark, la 2.
 
-Technologies web :
- - Servlet & JSP
- - Wicket
- - Struts2
-```
+- Lancer la commande *export SPARK_MAJOR_VERSION=2*
 
-- Versionner **TODO.txt** et commiter
-  - Titre : "Création de la todolist des développeurs"
-  - Contenu : "Création de la todolist contenant les choix techniques de l'équipe technique"
-- Ajouter 'JSF' comme nouvelle technologie web et commiter
-  - Titre : "Ajout de JSF dans les technologies web"
-  - Contenu : "JSF est une technologie web envisagée pour le projet"
-- Grâce à la commande `git log` vérifier que les deux commits sont bien présents dans un graphe reprenant tous les commits existants
+- Lancer la commande *spark-shell --version* afin de vérifier que Spark 2 est bien configuré.
 
-### 3. Premières sources
+- Lancer la commande *spark-shell*
 
-Pour débuter le projet il a été décidé de commencer à partir du premier commit une nouvelle branche *interface-web*
+Les variables d'entrée de Spark sont déjà initialisées notamment la *SparkSession* qui est présente dans la variable *spark*.
 
-- Créer la nouvelle branche *interface-web* partant du premier commit (celui du **README.txt**) tout en se positionnant sur la nouvelle branche
-- Dans cette branche, créer un nouveau dossier **src** contenant la page **index.html** :
+### Lire un fichier en json
 
-```html
-<html>
-  <body>
-    <h1>Resanet - Des voyages nets</h1>
-    <p>Transports utilisables : train, avion ou bateau</p>
-  </body>
-</html>
+- Dans *spark-shell*, créer une variable *products* et y stocker le contenu HDFS de */public/retail_db_json/products*
+
+Pour lire du *json* avec Spark, on fait ainsi :
+```scala
+val x = spark.read.json("path")
 ```
 
-- Ajouter ce contenu et commiter
-  - Titre : "Création de l'index"
-  - Contenu : "Création de la page d'index de l'application"
-- Modifier le HTML pour ajouter un titre avec la balise `<head>` dans le document puis commiter
-- Ajouter la ligne "Le site est disponible à l'adresse http://www.resanet.com/resaroute/" dans le fichier **README.txt** puis commiter
-- Vérifier que le commit se soit bien passé en affichant la liste de tous les commits existants
+Vous n'avez pas besoin de préciser le fichier. Spark comprend qu'il y a quelque chose dans le dossier.
+Le fichier *SUCCESS* sera ignoré.
 
-### 4. La fusion
+- Afficher les 20 premières lignes de ce fichier en utilisant *show* dans *spark-shell* sur la variable *products*
 
-- Regarder l'état des branches avec un `git log --graph --oneline --decorate --all`
-- Se positionner sur la branche *master* et y fusionner la branche *todo* grâce à la commande `git merge`
-  - Expliquer le résultat du merge visible avec un `git log --graph --oneline --decorate --all`
-- Sur la branche *master*, ajouter la ligne "Les tâches techniques à effectuer sont dans le fichier TODO.txt" dans le fichier **README.txt** puis commiter
-- Fusionner la branche *interface-web* dans *master*
-  - Gérer les conflits de version
-  - Expliquer le résultat du merge
-- Afficher le graphe des commits pour constater le résultat
+- Afficher le schéma du fichier en utilisant *printSchema* dans *spark-shell* sur la variable *products*
 
-### 5. Copies de commits
+<div class="pb"></div>
 
-- Créer une branche *java* à partir de la branche *master* tout en se positionnant sur la branche
-- Une équipe de développeurs a commencé le développement de l'application et a créé un fichier **src/java/Main.java**
 
-```java
-public class Launcher {
+## TP4 – Effectuer des transformations avec Spark
 
-  public static void main(String... args) {
-    System.out.println("Hello world");
-  }
+- A partir de la variable *products*, on veut uniquement les prix de plus de 100.
+De plus, on cherche seulement à afficher via *show* le *product_id* et le *product_name*.
 
-}
+Le résultat doit être ainsi :
+
+```
++----------+--------------------+
+|product_id|        product_name|
++----------+--------------------+
+|         2|Under Armour Men'...|
+|         5|Riddell Youth Rev...|
+|         6|Jordan Men's VI R...|
+|         8|Nike Men's Vapor ...|
+|        10|Under Armour Men'...|
+|        11|Fitness Gear 300 ...|
+|        12|Under Armour Men'...|
+|        14|Quik Shade Summit...|
+|        16|Riddell Youth 360...|
+|        17|Under Armour Men'...|
+|        19|Nike Men's Finger...|
+|        20|Under Armour Men'...|
+|        23|Under Armour Men'...|
+|        32|PUMA Men's evoPOW...|
+|        35|adidas Brazuca 20...|
+|        40|Quik Shade Summit...|
+|        46|Quest 12' x 12' D...|
+|        48|adidas Brazuca Fi...|
+|        49|Diamondback Adult...|
+|        52|Easton Mako Youth...|
++----------+--------------------+
+only showing top 20 rows
+
 ```
 
-- Ajouter et commiter ce contenu
-  - Titre : "Création du launcher de l'application"
-  - Description : "Ajout de la classe Launcher, classe ayant la méthode main()"
-- Ajouter dans le **TODO.txt** :
+- A partir de la variable *products*, on veut le prix maximum par categorie et le prix minimum par categorie accompagné de la *product_category_id*. 
+
+Le résultat doit être ainsi :
+
 ```
-Application lourde :
-Technologie Swing
++------------------+------------------+-------------------+
+|max(product_price)|min(product_price)|product_category_id|
++------------------+------------------+-------------------+
+|              90.0|              18.0|                 26|
+|            199.99|              4.99|                 29|
+|            189.99|               0.0|                 19|
+|            299.99|             34.99|                 54|
+|           1799.99|             21.99|                 22|
+|            329.99|              14.0|                  7|
+|            169.99|             34.99|                 34|
+|             130.0|              34.0|                 50|
+|            189.99|               0.0|                 57|
+|            999.99|             19.99|                 32|
+|            449.99|              99.0|                 43|
+|            899.99|             79.99|                 31|
+|            199.99|             19.99|                 39|
+|            229.99|               0.0|                 25|
+|            399.99|              14.0|                  6|
+|             241.0|              22.0|                 58|
+|            499.99|              28.0|                  9|
+|              90.0|              18.0|                 27|
+|            219.99|              28.0|                 51|
+|            159.99|              9.99|                 56|
++------------------+------------------+-------------------+
+only showing top 20 rows
+
 ```
 
-- Ajouter et commiter ce contenu
-  - Titre : "Ajouts dans la todolist"
-  - Description : "Informations sur le projet de création d'application lourde"
-- L'équipe se chargeant de gérer le fichier **TODO.txt** veut absolument récupérer ce dernier commit faisant des modifications sur la liste
-  - Depuis la branche *todo* récupérer uniquement le commit ayant modifié le fichier **TODO.txt** dans la branche *java*
-  - Utiliser `git cherry-pick`
+- A partir de la variable *products*, on veut le prix maximum par categorie et le prix minimum par categorie accompagné de la *product_category_id*.
+Il s'agit en plus de renommer le prix maximum par "max_price" et le prix minimum par "min_price".
 
-### 6. Déplacement et réarrangements
+Le résultat doit être ainsi :
 
-- Créer la branche *jsp* partant de la branche *java*
-- Le développeur en charge de la partie web débute quelques pages JSP dans la nouvelle branche *jsp*, en particulier ajoute le fichier **src/jsp/index.jsp**
-
-```jsp
-<html>
-  <head><title><%=transport.getId()%></title></head>
-  <body>
-    <h1><%=transport.getId()%> - <%=transport.getType()%></h1>
-    <p><%=transport.getDescription()%></p>
-  </body>
-</html>
 ```
-
-- Créer et commiter ce fichier
-  - Définir un titre et une description pertinente
-- Après observation d'une erreur, une correction est apportée à ce fichier, et `getDescription()` est changé en `getFullDescription()`
-  - Effectuer ces modifications et les commiter
-  - Définir un titre et une description pertinents
-- L'équipe en charge de l'interface web, fait remarquer judicieusement qu'il serait plus sage de baser le travail de *jsp* sur *interface-web* plutôt que *java*
-  - Déplacer tous les commits faits par *jsp*, mais pas *java*, au-dessus de la branche *interface-web* avec l'aide de `git rebase`
-
-### 7. Du travail de taxinomiste
-
-- Se repositionner sur la branche *todo*
-- Pour pouvoir accéder plus rapidement à certaines étapes cruciales du projet, il a été décidé d'associer certains commits avec un nom "simple"
-  - Créer le tag simple *first-meeting* sur le tout premier commit du fichier **TODO.txt** (trouvé en regardant les logs du fichier **TODO.txt**)
-- Se positionner sur la branche *master*
-- Sur le commit ajoutant la référence du **TODO.txt** dans le **README.txt** (trouvé en effectuant un `git blame` du fichier **README.txt**), ajouter un tag annoté :
-  - Titre : 'second-meeting'
-  - Message : "Après la seconde réunion, la décision de valider la todolist a été prise"
++---------+---------+-------------------+
+|max_price|min_price|product_category_id|
++---------+---------+-------------------+
+|     90.0|     18.0|                 26|
+|   199.99|     4.99|                 29|
+|   189.99|      0.0|                 19|
+|   299.99|    34.99|                 54|
+|  1799.99|    21.99|                 22|
+|   329.99|     14.0|                  7|
+|   169.99|    34.99|                 34|
+|    130.0|     34.0|                 50|
+|   189.99|      0.0|                 57|
+|   999.99|    19.99|                 32|
+|   449.99|     99.0|                 43|
+|   899.99|    79.99|                 31|
+|   199.99|    19.99|                 39|
+|   229.99|      0.0|                 25|
+|   399.99|     14.0|                  6|
+|    241.0|     22.0|                 58|
+|   499.99|     28.0|                  9|
+|     90.0|     18.0|                 27|
+|   219.99|     28.0|                 51|
+|   159.99|     9.99|                 56|
++---------+---------+-------------------+
+only showing top 20 rows
+```
 
 
 <div class="pb"></div>
 
 
-## TP4 – Références et relations
-
-![](TP4.png)
-
-- Les commits ont été faits dans l'ordre alphabétique (B est fait après A)
-- Les merges sont faits par ordre alphabétique (I est un merge dans l'ordre de F G et H)
-
-- Quels est le commit sélectionné par
-  - `J^`
-  - `F^`
-  - `G~`
-  - `I^2`
-  - `K~3`
-  - `K~^3^2`
-
-- Quelle serait la/les notations de
-  - I par rapport à K
-  - J par rapport à K
-  - A par rapport à H
-  - C par rapport à K
-  - D par rapport à I
-  - J par rapport à H
-
-- Quels sont les commits sélectionnés par les ensembles
-  - `F`
-  - `F H`
-  - `^H I`
-  - `I...J`
-  - `I^@`
-  - `K^!`
-
-
-<div class="pb"></div>
-
-
-## TP5 – Les accès distants
+## TP5 – Ecrire un fichier avec Spark
 
 - Si l'accès à internet est disponible :
   - Créer un compte sur https://github.com
@@ -306,7 +374,7 @@ Technologie Swing
 <div class="pb"></div>
 
 
-## TP6 – Configuration personnalisée
+## TP6 – Hive
 
 - Définir les alias `st`, `ci` et `co` respectivement pour les commandes `status`, `commit` et `checkout`
 - Dans le projet actuel, ignorer certains fichiers
@@ -314,3 +382,6 @@ Technologie Swing
   - Sauf **.gitignore** et **.project**
   - Le dossier **tests** situé à la racine
   - Le fichier **temp.txt** à la racine
+  
+  
+## TP7 – Sqoop

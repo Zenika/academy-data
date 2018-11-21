@@ -99,7 +99,7 @@
 
 ## Focus HDFS : lire fichier
 
-`hdfs dfs -less exemple/test`
+`hdfs dfs -text exemple/test`
 
 <br/>
 
@@ -109,7 +109,7 @@
 
 ## Focus HDFS : récupérer fichier
 
-`hdfs dfs -get exemple/test`
+`hdfs dfs -get exemple/test test` 
 
 
 

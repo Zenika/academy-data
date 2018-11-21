@@ -260,6 +260,48 @@ from people
 
 
 
+## Réaliser quelques statistiques par un élément
+
+```scala
+spark.sql("""
+select max(price), min(price) color
+from diamonds
+group by color
+""").show
+
++----------+----------+-----+
+|max(price)|min(price)|color|
++----------+----------+-----+
+|     18791|       342|    F|
+|     18731|       326|    E|
+|     18693|       357|    D|
+|     18710|       335|    J|
+|     18818|       354|    G|
+|     18823|       334|    I|
+|     18803|       337|    H|
++----------+----------+-----+
+```
+
+
+
+## Renommer des champs 
+
+```scala
+spark.sql("""
+select max(age) as max_age, min(age) as min_age, round(avg(age) as avg_age)
+from people
+""").show
+
++--------+--------+-------+
+|max_age |min_age |avg_age|
++--------+--------+-------+
+|      30|      19|   25.0|
++--------+--------+-------+
+```
+
+
+
+
 # TP 4 : Effectuer des transformations avec Spark
 
 <!-- .slide: class="page-title" -->

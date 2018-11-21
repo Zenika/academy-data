@@ -1,12 +1,12 @@
 {
-  "name": "formation-git",
+  "name": "formation-data",
   "description": "Formation Data",
   "version": "1.1.0",
   "author": "Zenika",
   "homepage": "https://training.zenika.com/formations/git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zenika/formation-git"
+    "url": "https://github.com/Zenika/academy-data"
   },
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
   },
   "config": {
     "deploy": {
-      "name": "zen-formation-git"
+      "name": "zen-formation-data"
     }
   },
   "scripts": {
