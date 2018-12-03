@@ -6,7 +6,7 @@ a) Importer les colonnes "order_id" et "order_status" de la table "orders" de la
 
 Pour rappel un fichier CSV est un fichier où les champs sont séparés par une virgule et les lignes par un retour à la ligne.
 
-Le résultat doit ressembler à ça :
+Le résultat doit ressembler à ça (partie tronquée) :
 
 ```
 
@@ -30,7 +30,7 @@ b) Importer toutes les colonnes de la table order_items de la base de données "
 
 Il s'agit de n'importer que les order_items dont l'order_item_id est supérieur à 100.
 
-Si on affichait ensuite (ce qui n'est pas demandé mais que vous pouvez faire pour valider votre résultat) le résultat avec Spark, on aura ce résultat :
+Si on affichait ensuite (ce qui n'est pas demandé mais que vous pouvez faire pour valider votre résultat) le résultat avec Spark (en ne montrant que les 3 premiers éléments), on aurait ce résultat :
 
 
 ```
@@ -58,10 +58,32 @@ Les infos de connexion sont les suivantes :
 
 Nous souhaitons réaliser des statistiques sur une liste de diamants.
 
-- Récupérer des sources parquet : un fichier qui contient des informations sur des diamants
-- Les mettre dans HDFS dans le dossier "/user/votrelogin/ex2"
+- Récupérer des sources parquet : un fichier qui contient des informations sur des diamants en lançant la commande :
+
+
+```
+
+wget -O diamonds.parquet https://github.com/NastasiaSaby/data-sources/blob/master/diamonds.parquet?raw=true
+
+```
+
+- Mettre le fichier "diamonds.parquet" dans HDFS dans le dossier "/user/votrelogin/ex2"
 - Nous voulons les diamants de plus de 1 carat et nous souhaitons savoir le prix max, le prix minimum et le prix moyen arrondi à l'unité par carat
 - Enregistrer en parquet le résultat dans HDFS dans le dossier "/user/votrelogin/ex2result"
+
+Si on affichait le résultat avec Spark (en ne montrant que les 3 premiers éléments), on aurait ce résultat :
+
+```
+
++-----+---------+---------+-----------+
+|carat|max_price|min_price|round_price|
++-----+---------+---------+-----------+
+| 1.82|    15802|     5993|    12986.0|
+|  2.4|    18541|    11988|    16362.0|
+| 1.41|    17216|     4145|     9460.0|
++-----+---------+---------+-----------+
+
+```
 
 => Livrables :
 
@@ -71,9 +93,16 @@ Nous souhaitons réaliser des statistiques sur une liste de diamants.
 
 ## Exercice 3 HDFS - Hive (sur 3 points)
 
-- Récupérer des sources parquet : un fichier qui liste le nom et le salaire d'employés
-- Les mettre dans HDFS dans le dossier "/user/votrelogin/ex3"
-- Créer une table Hive pour ça
+- Récupérer des sources parquet : un fichier qui liste le nom et le salaire d'employés (il y a très peu de lignes dans ce fichier) en lançant la commande :
+
+```
+
+wget -O employee.parquet https://github.com/NastasiaSaby/data-sources/blob/master/employee.parquet?raw=true
+
+```
+
+- Mettre le fichier "employee.parquet" dans HDFS dans le dossier "/user/votrelogin/ex3"
+- Créer dans votre base de données une table "employee" Hive pour ça (vous aurez sans doute besoin de lire avec Spark pour savoir quel est le schéma des données)
 
 => Livrables :
 
